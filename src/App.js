@@ -1,5 +1,9 @@
 import "./App.css";
+import { Routes, Route, Outlet } from "react-router-dom";
 import { createTheme, NextUIProvider, Text } from "@nextui-org/react";
+
+import Navbar from "./components/Navbar";
+import Dashboard from "./components/Dashboard";
 
 const theme = createTheme({
   type: "light",
@@ -15,8 +19,19 @@ const theme = createTheme({
 function App() {
   return (
     <NextUIProvider theme={theme}>
-      <div className="App">
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <div className="App bg-light">
+        <Routes>
+          <Route
+            element={
+              <div className="">
+                <Navbar />
+                <Outlet />
+              </div>
+            }
+          >
+            <Route path="/" element={<Dashboard />} />
+          </Route>
+        </Routes>
       </div>
     </NextUIProvider>
   );
