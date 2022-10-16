@@ -8,9 +8,7 @@ const Topbar = () => {
   const [price, setPrice] = useState("$500 - $2500");
   const [propertyType, setPropertyType] = useState("Houses");
 
-  const hello = () => {
-    console.log("Hello");
-  };
+
 
   return (
     <div>
@@ -23,15 +21,16 @@ const Topbar = () => {
       <div className="flex items-center justify-between gap-5 w-full bg-white h-[5rem] my-5 px-10 rounded-lg">
         <div className="space-y-[-0.5rem]">
           <h6>Location</h6>
-          <Dropdown DropdownVariants="shadow">
+          <Dropdown DropdownVariants="shadow" >
             <Dropdown.Button className="!p-0" auto light>
               <h6 className="m-0">{location}</h6>
             </Dropdown.Button>
             <Dropdown.Menu
               variant="light"
               aria-label="Actions"
+              onChange={(e) => console.log(e)}
             >
-              <Dropdown.Item key="new" onClick >Click</Dropdown.Item>
+              <Dropdown.Item key="new">Click</Dropdown.Item>
               <Dropdown.Item key="copy">Copy link</Dropdown.Item>
               <Dropdown.Item key="edit">Edit file</Dropdown.Item>
             </Dropdown.Menu>
