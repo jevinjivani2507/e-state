@@ -23,9 +23,9 @@ const ItemCard = (props) => {
           </h4>
           <h3 className="m-0">{props.title}</h3>
           <p className="m-0 text-sm text-gray tracking-normal">
-            {props.location}
+            {props.location} <span className="mx-2">|</span> <span className="text-primary text-lg font-semibold"> {props.pType} </span>
           </p>
-          <br />
+          {/* <br /> */}
           <div className="flex justify-between">
             <div className="flex items-center gap-2">
               <FaBed className="card-bottom" /> {props.bed} Beds
