@@ -11,7 +11,9 @@ module.exports = {
         gray: "#4F4F4F",
       },
       fontFamily: {
-        Montserrat: ["Montserrat", "regular"]
+        Regular: ["Montserrat", "regular"],
+        Medium: ["MontserratMed", "medium"],
+        Bold: ["MontserratBold", "bold"],
       }
     },
   },

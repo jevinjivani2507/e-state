@@ -9,6 +9,7 @@ const Navbar = () => {
         variant="sticky"
         disableBlur
         className="!bg-white"
+        color="primary"
       >
         <Nav.Content enableCursorHighlight hideIn="xs" variant="highlight">
           <Nav.Link  href="#" >Buy</Nav.Link>

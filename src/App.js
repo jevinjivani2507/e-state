@@ -9,7 +9,7 @@ const theme = createTheme({
   type: "light",
   theme: {
     colors: {
-      primary: "#0070f3",
+      primary: "#",
     },
     space: {},
     fonts: {},
