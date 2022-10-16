@@ -28,10 +28,10 @@ const ItemCard = (props) => {
           <br />
           <div className="flex justify-between">
             <div className="flex items-center gap-2">
-              <FaBed className="card-bottom" /> {props.beds} Beds
+              <FaBed className="card-bottom" /> {props.bed} Beds
             </div>
             <div className="flex items-center gap-2">
-              <FaBath className="card-bottom" /> {props.baths} Baths
+              <FaBath className="card-bottom" /> {props.bath} Baths
             </div>
             <div className="flex items-center gap-2">
               <BiArea className="card-bottom" /> {props.area} sqft
