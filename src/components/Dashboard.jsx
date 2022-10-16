@@ -3,12 +3,9 @@ import Card from "./ItemCard";
 import Topbar from "./Topbar";
 import Footer from "./Footer";
 
-import {items} from "../Resources/items";
+import { items } from "../Resources/items";
 
 const Dashboard = () => {
-  // const
-  console.log(items); 
-  // console.log(iht);
   return (
     <div className="min-h-screen px-40 pt-10">
       <Topbar />
