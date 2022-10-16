@@ -8,16 +8,16 @@ import { BiArea } from "react-icons/bi";
 const ItemCard = () => {
   return (
     <div className="min-h-[10rem]">
-      <Card>
+      <Card isPressable borderWeight="none" isHoverable>
         <div>
           <img src={image1} />
         </div>
-        <div className="p-5 space-y-[-.25rem]">
-          <h4 className="text-primary">
+        <div className="p-5">
+          <h4 className="text-primary tracking-normal m-0">
             $2,095 <span className="text-sm text-gray">/ month</span>
           </h4>
-          <h3>Palm Harbor</h3>
-          <p className="text-sm text-gray">
+          <h3 className="m-0">Palm Harbor</h3>
+          <p className="m-0 text-sm text-gray tracking-normal">
             2699 Green Vally, Highland Lake,FL
           </p>
           <br />
